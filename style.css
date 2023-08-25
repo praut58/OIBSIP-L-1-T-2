@@ -26,9 +26,26 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 200px;
-}
+.springy-text {
+    color: white;
+    animation-name: springy-text;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3.0);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  @keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+    }
+  100%   {
+    letter-spacing: 0.1em;
+    color: rgb(242, 31, 77);
+    }
+  }
 nav ul li{
     display: inline-block;
     list-style: none;
